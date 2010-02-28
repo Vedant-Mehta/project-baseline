@@ -1,0 +1,220 @@
+/* !Import external files */
+  /* !960 grid (do not include 960.css) */
+  @import "open-source/reset.css";
+  @import "open-source/text.css";
+/* !Variables */
+/* !Mixin Styles */
+/* !Mixins */
+  .preText { // pre-formatted/code/monospace text styles
+    font-family:"Bitstream Vera Sans Mono","Andale Mono","Courier New",Courier,monospace;
+    font-size:0.9em;
+  }
+  .abbrAcro { // styles for both ABBR and ACRONYM
+    cursor:help;
+    border-bottom:1px dotted #ccc;
+  }
+  .useSpritePng { // main sprite background image
+    background-image:url(/_res/img/sprites.png);
+    background-repeat:no-repeat;
+  }
+  .serif {
+    font-family:Georgia,"Times New Roman",Times,serif;
+  }
+  .sansSerif {
+    font-family:Arial,Helvetica,sans-serif;
+  }
+  .ieRoundedCorners {
+    behavior:url(/_res/htc/border-radius.htc);
+  }
+/* !HTML baseline */
+  * { margin-top:0; }
+  a {
+    :link {}
+    :visited {}
+    :hover {}
+    :active {}
+    :focus {}
+  }
+  abbr {
+    .abbrAcro;
+  }
+  acronym {
+    .abbrAcro;
+  }
+  address {}
+  area {}
+  b {}
+  base {}
+  bdo {}
+  big {
+    font-size:1.25em;
+  }
+  blockquote {}
+  body {}
+  br {}
+  button,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  input[type="image"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input.button
+    {
+      cursor:pointer;
+      font-weight:normal;
+      vertical-align:middle;
+      :hover{}
+      :focus,:active{}
+    }
+  button::-moz-focus-inner { 
+    border:0;
+    padding:0;
+  }
+  cite {}
+  code {
+    .preText;
+  }
+  del {}
+  dfn {}
+  div {}
+  dl {
+    dt {}
+    dd {}
+  }
+  em {}
+  fieldset {}
+  font {}
+  form {
+    margin:0;
+    padding:0;
+  }
+  head {}
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  hr {}
+  html {}
+  i {}
+  iframe {}
+  img {}
+  input {
+    vertical-align:middle;
+    :focus {
+      outline:none !important;
+    }
+  }
+  ins {
+    background-color:#ffd;
+  }
+  kbd {
+    .preText;
+  }
+  label {
+    cursor:pointer;
+  }
+  legend {}
+  link {}
+  map {}
+  meta {}
+  noframes {}
+  noscript {}
+  object {}
+  ol {
+    margin-bottom:10px;
+    li {
+      margin-left:30px;
+      margin-bottom:5px;
+      li {
+        margin-bottom:0;
+        padding-top:5px;
+      }
+    }
+  }
+  optgroup {}
+  option {}
+  p {}
+  param {}
+  pre {
+    .preText;
+  }
+  q { quotes: '\201C' '\201D' '\2018' '\2019'; 
+    :before {
+      content: open-quote;
+    }
+    :after {
+      content: close-quote;
+    }
+  }
+  samp {
+    .preText;
+  }
+  select {
+    vertical-align:middle;
+  }
+  small { font-size:90%; }
+  span {}
+  strong {}
+  style {}
+  sub {
+    vertical-align:sub;
+    font-size:95%;
+  }
+  sup {
+    vertical-align:super;
+    font-size:95%;
+  }
+  table {
+    clear:both;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    tr {}
+    td {
+      text-align:left;
+      vertical-align:top;
+    }
+    th {
+      text-align:left;
+      font-weight:normal;
+      vertical-align:top;
+    }
+    thead {}
+    tbody {}
+    tfoot {}
+    caption { font-weight:bold; }
+    colgroup {}
+    col {}
+  }
+  textarea {
+    vertical-align:top;
+    .preText;
+  }
+  title {}
+  tt {
+    .preText;
+  }
+  ul {
+    margin-bottom:10px;
+    li {
+      margin-left:20px;
+      margin-bottom:5px;
+      li {
+        margin-bottom:0;
+        padding-top:5px;
+      }
+    }
+  }
+  var {}
+  u {}
+  :target {
+    background-color:#ffc;
+  }
+  // colors for selected text
+  ::-moz-selection { // mozilla
+  }
+  ::selection { // webkit
+  }
