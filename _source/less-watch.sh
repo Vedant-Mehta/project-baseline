@@ -1,1 +1,1 @@
-lessc ./less/mris.less ../www/_res/css/mris.less --watch --growl --debug
+lessc ./less/main.less ../www/_res/css/main.less --watch --growl --debug
