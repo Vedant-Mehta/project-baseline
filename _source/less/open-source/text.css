@@ -1,0 +1,13 @@
+/**
+ *  @author MRaichelson
+ *  @note   modified version of the text.css file included with the standard 960 grid system distro.
+ */
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+ol { list-style: decimal; }
+ul { list-style: disc; }
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset { margin-bottom: 10px; line-height:1.5em; }
