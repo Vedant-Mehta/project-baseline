@@ -2,6 +2,7 @@
 
 = Dependencies =
 
+* Ruby: http://ruby-lang.org/
 * HAML: http://haml-lang.com/
 * LESS: http://lesscss.org/
 * YUI Compressor: http://developer.yahoo.com/yui/compressor/
