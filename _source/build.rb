@@ -54,7 +54,7 @@ def html
   puts 'HTML compile complete...'
   # regex/cleanup script
   puts 'Calling HAML cleanup script...'
-  `./_scripts/hamlcleanup.pl haml/includes/*.inc`
+  `./_scripts/hamlcleanup.pl haml/_partials/*.inc`
   `./_scripts/hamlcleanup.pl ../www/*.html`
   # move files as needed
 end
