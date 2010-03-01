@@ -1,0 +1,1 @@
+$j=jQuery.noConflict();if($j.browser.msie){$j("table.zebra").each(function(a){$j("tr:nth-child(even)",this).addClass("even");$j("tr:nth-child(odd)",this).addClass("odd")});$j("ul,ol").each(function(a){$j("li:first",this).addClass("first-child");$j("li:last",this).addClass("last-child")})};
