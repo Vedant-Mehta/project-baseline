@@ -1,0 +1,18 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    -# include META tags
+    :ruby
+      File.open('./haml/_partials/_meta.inc'){ |f| haml_concat f.read }
+    %title HTML Test page
+    -# include LINK and SCRIPT tags
+    :ruby
+      File.open('./haml/_partials/_link.inc'){ |f| haml_concat f.read }
+      File.open('./haml/_partials/_script.inc'){ |f| haml_concat f.read }
+  %body
+    -# include HTML markup example
+    :ruby
+      File.open('./haml/_partials/html-test.inc'){ |f| haml_concat f.read }
+    -# this goes at the end of the BODY of the document
+    :ruby
+      File.open('./haml/_partials/_page-end.inc'){ |f| haml_concat f.read }
