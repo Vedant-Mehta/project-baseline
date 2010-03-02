@@ -7,7 +7,8 @@ In my day-to-day work I'm usually in charge of building bundled sets of HTML tem
 * Uses HAML as an HTML abstraction layer that can be compiled out to various doctypes allowing me to focus more 
   on document structure than on "housekeeping" tasks like making sure not to misspell a tag or a missing a closing 
   tag
-* Uses LESS for CSS to allow the use of Less's syntax for variables and mixins.
+* Uses LESS for CSS to allow the use of Less's syntax for variables and mixins. (HAML comes packaged with the 
+  SASS system for CSS that offers similar options, but I just wasn't able to adjust to the syntax.)
 * Incorporates the Yahoo YUI compressor for file compression on JS/CSS files.
 * Uses a local git repository for local version control alongside our office-standard SVN workflow.
 
