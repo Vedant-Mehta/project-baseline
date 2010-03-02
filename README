@@ -1,4 +1,14 @@
-= Concept =
+= WTF are you thinking? =
+
+In my day-to-day work I'm usually in charge of building bundled sets of HTML templates with their supporting JavaScript and CSS. One of the shortcomings of working with static files for this was the inability to use some of the tools common in server-side scripting languages (things like includes and variables). So I built myself a workflow that does give me access to some of those tools while still churning out static file sets that can be passed on to either a backend developer or to a client's technology team.
+
+= Concepts =
+
+* Uses HAML as an HTML abstraction layer that can be compiled out to various doctypes allowing me to focus more on document
+  structure than on "housekeeping" tasks like making sure not to misspell a tag or a missing a closing tag
+* Uses LESS for CSS to allow the use of Less's syntax for variables and mixins.
+* Incorporates the Yahoo YUI compressor for file compression on JS/CSS files.
+* Uses a local git repository for local version control alongside our office-standard SVN workflow.
 
 = Dependencies =
 
@@ -14,24 +24,24 @@
 
 = File Structure =
 
-_source: files that will be used to build static HTML/CSS files
-  _scripts: other scripts that are used in processing files
-  haml: HAML markup files
-  less: LESS css files
-    open-source: any open-source CSS files that are used in the site
-  psd: special-purpose PSD files used to create graphics that can't just be cut from the design mockups as-is 
+/_source: files that will be used to build static HTML/CSS files
+  /_scripts: other scripts that are used in processing files
+  /haml: HAML markup files
+  /less: LESS css files
+    /open-source: any open-source CSS files that are used in the site
+  /psd: special-purpose PSD files used to create graphics that can't just be cut from the design mockups as-is 
   (sprited images, etc.)
-www: where the compiled files will go, the idea is that anything that will be web-accessible or part of the template 
+/www: where the compiled files will go, the idea is that anything that will be web-accessible or part of the template 
 package will live in this directory.
-  _res: resource files used for the template package
-    css: cascading style sheets, any files in this directory should be minified.
-      uncompressed: copies of the CSS files that have not been compressed/minified
-    htc: any .htc behavior files that are used in internet explorer
-    img: any images
-      grid: images that show the grid columns from the 960 grid system
-      fpo: images used for placement only (placeholders for images in content objects, etc.)
-    js: javascript files, like with the CSS files anything in this directory should be compressed/minified
-      uncompressed: the uncompressed and commented javascript files for the project.
-    (as-needed) html: any HTML files only used under special circumstances (lightbox popup contents, etc.)
-    (as-needed) swf: any flash SWF files used for the site
-    (as-needed) xml: any XML files used for the site
+  /_res: resource files used for the template package
+    /css: cascading style sheets, any files in this directory should be minified.
+      /uncompressed: copies of the CSS files that have not been compressed/minified
+    /htc: any .htc behavior files that are used in internet explorer
+    /img: any images
+      /grid: images that show the grid columns from the 960 grid system
+      /fpo: images used for placement only (placeholders for images in content objects, etc.)
+    /js: javascript files, like with the CSS files anything in this directory should be compressed/minified
+      /uncompressed: the uncompressed and commented javascript files for the project.
+    (as-needed) /html: any HTML files only used under special circumstances (lightbox popup contents, etc.)
+    (as-needed) /swf: any flash SWF files used for the site
+    (as-needed) /xml: any XML files used for the site
