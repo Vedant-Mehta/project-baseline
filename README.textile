@@ -16,6 +16,7 @@ In my day-to-day work I'm usually in charge of building bundled sets of HTML tem
 * LESS: "http://lesscss.org/":http://lesscss.org/
 * YUI Compressor: "http://developer.yahoo.com/yui/compressor/":http://developer.yahoo.com/yui/compressor/
 * 960 Grid System: "http://960.gs/":http://960.gs/
+* Fancybox: "http://www.fancybox.net/":http://www.fancybox.net/
 
 *Recommendations*
 
@@ -42,3 +43,7 @@ In my day-to-day work I'm usually in charge of building bundled sets of HTML tem
 *** (as-needed) /html: any HTML files only used under special circumstances (lightbox popup contents, etc.)
 *** (as-needed) /swf: any flash SWF files used for the site
 *** (as-needed) /xml: any XML files used for the site
+
+*Isn't this kind of overcomplicating a simple task?*
+
+Quite possibly. It's been a helpful workflow for me, but I can't make any promises that anyone else will get any use out of it.
