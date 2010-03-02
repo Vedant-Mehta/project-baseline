@@ -1,2 +1,2 @@
-cat jquery-1.4.1.min.js jquery.cycle.all.js jquery.hoverIntent.js jquery.fancybox-1.2.6.js > jquery.js
+cat jquery-1.4.1.min.js jquery.cycle.all.js jquery.hoverIntent.js jquery.mousewheel-3.0.2.pack.js jquery.easing-1.3.pack.js jquery.fancybox-1.3.0.js > jquery.js
 java -jar ~/scripts/yuicompressor-2.4.2.jar jquery.js -o ../jquery.js
