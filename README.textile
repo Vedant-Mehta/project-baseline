@@ -11,15 +11,15 @@ In my day-to-day work I'm usually in charge of building bundled sets of HTML tem
 
 *Dependencies*
 
-* Ruby (and Gems): http://ruby-lang.org/
-* HAML: http://haml-lang.com/
-* LESS: http://lesscss.org/
-* YUI Compressor: http://developer.yahoo.com/yui/compressor/
-* 960 Grid System: http://960.gs/
+* Ruby (and Gems): "http://ruby-lang.org/":http://ruby-lang.org/
+* HAML: "http://haml-lang.com/":http://haml-lang.com/
+* LESS: "http://lesscss.org/":http://lesscss.org/
+* YUI Compressor: "http://developer.yahoo.com/yui/compressor/":http://developer.yahoo.com/yui/compressor/
+* 960 Grid System: "http://960.gs/":http://960.gs/
 
 *Recommendations*
 
-* ImageOptim: http://imageoptim.pornel.net/ I use this as a GUI tool for compressing images (especially sprited images), it can help reduce the file size even beyond what you get from photoshop's save for web tool.
+* ImageOptim: "http://imageoptim.pornel.net/":http://imageoptim.pornel.net/ I use this as a GUI tool for compressing images (especially sprited images), it can help reduce the file size even beyond what you get from photoshop's save for web tool.
 
 *File Structure*
 
