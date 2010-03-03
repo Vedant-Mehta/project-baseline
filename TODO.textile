@@ -1,7 +1,7 @@
 *Small Tasks*
 
-* include a copy of YUIcompressor.*.jar and change path for compression calls in build.rb
 * see if there's a file path syntax that will work on windows as well as osx/*nix.
+* -include a copy of YUIcompressor.*.jar and change path for compression calls in build.rb-
 
 *Medium Tasks*
 

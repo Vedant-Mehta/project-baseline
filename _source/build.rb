@@ -64,13 +64,13 @@ def css
   puts 'Compiling LESS files to CSS...'
   `lessc ./less/main.less ../www/_res/css/uncompressed/main.css`
   puts 'Compressing CSS files...'
-  `java -jar ~/scripts/yuicompressor-2.4.2.jar ../www/_res/css/uncompressed/main.css -o ../www/_res/css/main.css`
+  `java -jar ./_scripts/yuicompressor-2.4.2.jar ../www/_res/css/uncompressed/main.css -o ../www/_res/css/main.css`
 end
 
 #compile and compress JS files
 def js
   puts 'Compressing JS files...'
-  `java -jar ~/scripts/yuicompressor-2.4.2.jar ../www/_res/js/uncompressed/main.js -o ../www/_res/js/main.js`
+  `java -jar ./_scripts/yuicompressor-2.4.2.jar ../www/_res/js/uncompressed/main.js -o ../www/_res/js/main.js`
   # --nomunge
 end
 
