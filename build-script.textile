@@ -1,0 +1,19 @@
+*So, uh, this makes HTML pages or something?*
+
+By calling the build script from the command line you trigger some Ruby (or Java in the case of the YUI compressor, or Perl in the case of the hamlcleanup.pl script) voodoo that rips through your files and converts them out to what you really want them to be. It's not that hard, just from a command-line you need to go into the @_source@ directory and use:
+
+@./build.rb@
+
+*Does it make everything every time?*
+
+It doesn't have to, if you add one of these parameters to the call to the script you can make it only do certain things. 
+
+* @(no args)@: builds everything and does a local git commit
+* @html@: only builds the HTML files (first compiling partials and then the pages.)
+* @css@: only triggers the LESS to CSS conversion and then runs the CSS files through the YUI compressor
+* @js@: only runs the JS files through the YUI compressor
+* @git@: only does a local Git commit
+
+So, as an example, if I only wanted to rebuild the CSS and JS files for my project I could use the following
+
+@./build.rb css js@
