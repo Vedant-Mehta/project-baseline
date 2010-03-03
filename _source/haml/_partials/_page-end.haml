@@ -1,8 +1,8 @@
 -# main JS behaviors added here. (do not wrap contents in $(doc).ready() it will cause a flicker/delay)
-%script{ :type=>"text/javascript", :src=>"/_res/js/main.js" }
+%script{ :type=>"text/javascript", :src=>"./_res/js/main.js" }
 -# browser-specific JS can be referenced here as well
 /[if IE 6]
-  %script{ :type=>"text/javascript", :src=>"/_res/js/DD_belatedPNG_0.0.8a-min.js" }
+  %script{ :type=>"text/javascript", :src=>"./_res/js/DD_belatedPNG_0.0.8a-min.js" }
   :javascript
     DD_belatedPNG.fix('img.foo');
 -# Other scripts such as analytics or social media widgets can go here.
